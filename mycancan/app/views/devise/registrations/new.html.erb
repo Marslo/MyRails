@@ -1,0 +1,11 @@
+<h2>Sign Up</h2>
+<%= simple_form_for(resource, :as => resource_name, :url => session_path(resource_name), :html => { :class => 'form-horizontal'}) do |f| %>
+  <%= f.error_notification %>
+  <%= dispaly_base_errors resource %>
+  <%= f.input :name, :autofocuse => true %>
+  <%= f.input :email, :require => true %>
+  <%= f.input :password, :require => true %>
+  <%= f.input :password_confirmation, :require => true %>
+  <%= f.button :submit, 'Sign Up', :class => 'btn-primary' %>
+<% end %>
+<%= render "devise/shared/links" %>
