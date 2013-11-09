@@ -1,4 +1,8 @@
 Mycancan::Application.routes.draw do
+  get "users/index"
+
+  get "users/show"
+
   # get "home/index"
   authenticated :user do
     root :to => 'home#index'
