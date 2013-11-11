@@ -31,7 +31,11 @@ gem 'jquery-rails'
 
 # Use unicorn as the app server
 # gem 'unicorn'
-
+group :development do
+  # gem 'better_errors'
+  # gem 'binding_of_caller', :platforms=>[:mri_19, :mri_20, :rbx]
+  # gem 'quiet_assets'
+end
 # Deploy with Capistrano
 # gem 'capistrano'
 

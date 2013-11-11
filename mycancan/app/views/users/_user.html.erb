@@ -1,4 +1,4 @@
-<div id = "role-options-<%= user.id %>" class = "modle" sytle = "display:none;">
+<div id = "role-options-<%= user.id %>" class = "modal" style = "display:none;">
   <%= simple_form_for user, :url => user_path(user), :html => { :method => :put, :class => 'form-horizontal' } do |f| %>
     <div class="modal-header">
       <a class="close" data-dismiss = "modal">&#215;</a>
@@ -9,7 +9,7 @@
     </div>
     <div class="modal-footer">
       <%= f.submit "Change Role", :class => 'btn' %>
-      <a class="btn" data-dismiss = "modal" herf = '#'>Close</a>
+      <a class="btn" data-dismiss = "modal" href = '#'>Close</a>
     </div>
   <% end %>
 </div>
